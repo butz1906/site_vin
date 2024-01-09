@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="https://kit.fontawesome.com/9876c79344.js" crossorigin="anonymous"></script>
+<title>ECF 1</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="logo">
+        <div id="headerGauche">
+            <div id="lienEntete">
+                <i id="burger" class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="recherche">
+                <input name="recherche" type="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </header>
+    <div id="menu">
+        <ul>
+            <li><a title="Acceuil" href="#">ACCUEIL</a></li>
+            <li><a title="Le bio" href="#">LE BIO</a></li>
+            <li id="boutique"><a title="Boutique" href="#">BOUTIQUE</a>
+            <ul id="sousmenu">
+                <li><a title="Mon panier" href="#">Mon panier</a></li>
+                <li><a title="Mon compte" href="#">Mon compte</a></li>
+            </ul></li>
+            <li><a title="À propos" href="#">À PROPOS</a></li>
+            <li class="form"><a title="Contact" href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <form class="cmxform" id="commentForm" method="get" action="">
+        <fieldset>
+            <i id="croix" class="fa-solid fa-xmark"></i>
+            <h3>Contactez-nous</h3>
+            <div id="choix">
+                <div id="contact">
+                    <input type="radio" name="contact">
+                    <label for="info">Demande d'informations</label>
+                </div>
+                <div id="commande">
+                    <input type="radio" name="contact">
+                    <label for="commande">Commande en ligne</label><br>
+                </div>
+            </div>
+
+                <input id="cname" type="text" name="name" placeholder="Votre nom*" required data-msg="<br>Veuillez renseigner votre nom."><br>
+                <input id="cemail" type="email" name="email" placeholder="Votre adresse mail*" required data-msg="<br>Veuillez renseigner votre email."><br>
+            <textarea id="ccomment" name="comment" rows="20" placeholder="Votre message*" required data-msg="<br>Veuillez saisir un message."></textarea><br>
+            <button id="envoi">Envoyer</button>
+        </fieldset>
+    </form>  
+    <script>
+        $("#commentForm").validate();
+    </script>
+        <img id="banniere" src="images/bandeau.jpg" alt="Bannière">
+    <div id="bandeau">    
+        <h3>La scie rosée</h3>
+        <p>Quis mollit ut cupidatat irure id non adipisicing quis veniam pariatur. Lorem fugiat commodo minim laboris minim aute amet ex. Cillum velit incididunt sint consectetur minim consectetur aliquip. Elit consectetur consequat id adipisicing anim aliquip id elit labore mollit dolor culpa esse. Occaecat ut ipsum cillum labore ipsum.Quis mollit ut cupidatat irure id non adipisicing quis veniam pariatur. Lorem fugiat commodo minim laboris minim aute amet ex. Cillum velit incididunt sint consectetur minim consectetur aliquip. Elit consectetur consequat id adipisicing anim aliquip id elit labore mollit dolor culpa esse. Occaecat ut ipsum cillum labore ipsum.Quis mollit ut cupidatat irure id non adipisicing quis veniam pariatur. Lorem fugiat commodo minim laboris minim aute amet ex. Cillum velit incididunt sint consectetur minim consectetur aliquip. Elit consectetur consequat id adipisicing anim aliquip id elit labore mollit dolor culpa esse. Occaecat ut ipsum cillum labore ipsum.Quis mollit ut cupidatat irure id non adipisicing quis veniam pariatur. Lorem fugiat commodo minim laboris minim aute amet ex. Cillum velit incididunt sint consectetur minim consectetur aliquip. Elit consectetur consequat id adipisicing anim aliquip id elit labore mollit dolor culpa esse. Occaecat ut ipsum cillum labore ipsum.</p>
+    </div>
+    <article>
+        <div class="contenu">
+            <img src="images/photo1.jpg" alt="raisin">
+            <div class="texte">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Ea in amet eiusmod Lorem culpa eu voluptate ea labore do aliquip deserunt. Sint esse in excepteur ipsum non do. Nulla mollit nulla tempor exercitation eiusmod ex eu ex dolor cupidatat anim Lorem non adipisicing. Pariatur et ex et mollit nulla amet ex ex laboris sint. Mollit nulla ea reprehenderit ex do id consequat est enim cillum magna. Laboris ad ea nulla consectetur dolor anim aute nisi ex exercitation. Culpa cillum esse non excepteur excepteur amet consectetur culpa.Ea in amet eiusmod Lorem culpa eu voluptate ea labore do aliquip deserunt. Sint esse in excepteur ipsum non do. Nulla mollit nulla tempor exercitation eiusmod ex eu ex dolor cupidatat anim Lorem non adipisicing. Pariatur et ex et mollit nulla amet ex ex laboris sint. Mollit nulla ea reprehenderit ex do id consequat est enim cillum magna. Laboris ad ea nulla consectetur dolor anim aute nisi ex exercitation. Culpa cillum esse non excepteur excepteur amet consectetur culpa.</p>
+        </div></div>
+        <div class="contenu">
+            <img src="images/photo2.jpg" alt="vin">
+            <div class="texte">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Ea in amet eiusmod Lorem culpa eu voluptate ea labore do aliquip deserunt. Sint esse in excepteur ipsum non do. Nulla mollit nulla tempor exercitation eiusmod ex eu ex dolor cupidatat anim Lorem non adipisicing. Pariatur et ex et mollit nulla amet ex ex laboris sint. Mollit nulla ea reprehenderit ex do id consequat est enim cillum magna. Laboris ad ea nulla consectetur dolor anim aute nisi ex exercitation. Culpa cillum esse non excepteur excepteur amet consectetur culpa.Ea in amet eiusmod Lorem culpa eu voluptate ea labore do aliquip deserunt. Sint esse in excepteur ipsum non do. Nulla mollit nulla tempor exercitation eiusmod ex eu ex dolor cupidatat anim Lorem non adipisicing. Pariatur et ex et mollit nulla amet ex ex laboris sint. Mollit nulla ea reprehenderit ex do id consequat est enim cillum magna. Laboris ad ea nulla consectetur dolor anim aute nisi ex exercitation. Culpa cillum esse non excepteur excepteur amet consectetur culpa.</p>
+        </div></div>
+        <div class="contenu">
+            <img src="images/photo3.jpg" alt="bouteille">
+            <div class="texte">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Ea in amet eiusmod Lorem culpa eu voluptate ea labore do aliquip deserunt. Sint esse in excepteur ipsum non do. Nulla mollit nulla tempor exercitation eiusmod ex eu ex dolor cupidatat anim Lorem non adipisicing. Pariatur et ex et mollit nulla amet ex ex laboris sint. Mollit nulla ea reprehenderit ex do id consequat est enim cillum magna. Laboris ad ea nulla consectetur dolor anim aute nisi ex exercitation. Culpa cillum esse non excepteur excepteur amet consectetur culpa. Ea in amet eiusmod Lorem culpa eu voluptate ea labore do aliquip deserunt. Sint esse in excepteur ipsum non do. Nulla mollit nulla tempor exercitation eiusmod ex eu ex dolor cupidatat anim Lorem non adipisicing. Pariatur et ex et mollit nulla amet ex ex laboris sint. Mollit nulla ea reprehenderit ex do id consequat est enim cillum magna. Laboris ad ea nulla consectetur dolor anim aute nisi ex exercitation. Culpa cillum esse non excepteur excepteur amet consectetur culpa.</p>
+        </div></div>
+    </article>
+    <footer>
+        <div id="lienFooter">
+            <a title="Acceuil" href="#">Accueil</a>
+            <a title="Le bio" href="#">Le Bio</a>
+            <a title="À propos" href="#">À propos</a>
+            <a title="Contact" class="form" href="#">Contact</a>
+            <a title="Mentions légales" href="#">Mentions légales</a>
+            <a title="CGV" href="#">CGV</a>
+        </div>
+        <div class="copyright">
+            <p>La scie rosée &copy; 2019</p>
+            <img src="images/logoAB.jpg" alt="logoab">
+        </div>
+    </footer>
+</body>
+</html>
